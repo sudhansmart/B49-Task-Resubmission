@@ -17,6 +17,12 @@ This API endpoint allows you to create a new room with details such as the numbe
 **URL:** https://hallbooking-p7rj.onrender.com/createroom
 
 **Method:** POST
+**schema** :  {
+      "roomNumber" : 3,
+    "seatsAvailable" : 550,
+         "amenities" : "Wi-fi,Washing Machine,Air-conditioning",
+       "pricePerHour" : "$850"
+    }
 
 ### Book a Room
 
@@ -25,6 +31,16 @@ This API endpoint allows you to book a room for a specific customer with details
 **URL:** https://hallbooking-p7rj.onrender.com/bookroom
 
 **Method:** POST
+
+**Schema :** {
+     "roomId" : 1,
+    "customerName" :"Hariharsudhan",
+    "date": "02-12-2023",
+    "startTime": "09:00",
+    "endTime": "14:00"
+   
+   
+}
 
 ### List All Rooms with Booked Data
 
