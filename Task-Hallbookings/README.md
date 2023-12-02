@@ -6,7 +6,7 @@ This document provides essential information about the Hall Booking API project,
 
 ## Render URL
 
-- **URL:** []()
+- **URL:** [https://hallbooking-p7rj.onrender.com](https://hallbooking-p7rj.onrender.com)
 
 ## API Endpoints
 
@@ -14,7 +14,7 @@ This document provides essential information about the Hall Booking API project,
 
 This API endpoint allows you to create a new room with details such as the number of seats, amenities, and price per hour.
 
-**URL:** https://hall-booking-x7pr.onrender.com/create-room
+**URL:** https://hallbooking-p7rj.onrender.com/createroom
 
 **Method:** POST
 
@@ -22,7 +22,7 @@ This API endpoint allows you to create a new room with details such as the numbe
 
 This API endpoint allows you to book a room for a specific customer with details like customer name, date, start time, end time, and room ID.
 
-**URL:** https://hall-booking-x7pr.onrender.com/book-room
+**URL:** https://hallbooking-p7rj.onrender.com/bookroom
 
 **Method:** POST
 
@@ -30,7 +30,7 @@ This API endpoint allows you to book a room for a specific customer with details
 
 This API endpoint retrieves a list of all rooms with their booking status, customer names, date, start time, and end time.
 
-**URL:** https://hall-booking-x7pr.onrender.com/rooms-with-bookings
+**URL:** https://hallbooking-p7rj.onrender.com/roomswithbookings
 
 **Method:** GET
 
@@ -38,7 +38,7 @@ This API endpoint retrieves a list of all rooms with their booking status, custo
 
 This API endpoint retrieves a list of all customers with their booked room names, date, start time, and end time.
 
-**URL:** https://hall-booking-x7pr.onrender.com/customers-with-bookings
+**URL:** https://hallbooking-p7rj.onrender.com/customerswithbookings
 
 **Method:** GET
 
@@ -46,12 +46,12 @@ This API endpoint retrieves a list of all customers with their booked room names
 
 This API endpoint allows you to count how many times a specific customer has booked a room.
 
-**URL:** https://hall-booking-x7pr.onrender.com/customer-booking-history/:customerName
+**URL:** https://hallbooking-p7rj.onrender.com/customerhistory/:customerName
 
 **Method:** GET
 
 ## GitHub Repository
 
-- **URL:** [https://github.com/Shanmugamrskfamily/hall-booking-nodejs-mongodb.git](https://github.com/Shanmugamrskfamily/hall-booking-nodejs-mongodb.git)
+- **URL:** [https://github.com/sudhansmart/B49-Task-Resubmission.git](https://github.com/sudhansmart/B49-Task-Resubmission.git)
 
 ---
