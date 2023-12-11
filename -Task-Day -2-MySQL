@@ -1,1 +1,55 @@
+CREATE DATABASE IF NOT EXISTS guvi;
+
+-- Use the university database
+USE guvi;
+
+
+-- Create a table for students
+CREATE TABLE IF NOT EXISTS students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    birth_date DATE,
+    email VARCHAR(100) UNIQUE NOT NULL
+);
+
+-- Create a table for courses
+CREATE TABLE IF NOT EXISTS courses (
+    course_id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name VARCHAR(100) NOT NULL,
+    instructor VARCHAR(100) NOT NULL
+);
+
+-- Create a table for student-course relationships
+CREATE TABLE IF NOT EXISTS student_courses (
+    enrollment_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT,
+    course_id INT,
+    FOREIGN KEY (student_id) REFERENCES students(student_id),
+    FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
+
+-- Insert sample data into students table
+INSERT INTO students (first_name, last_name, birth_date, email)
+VALUES 
+    ('John', 'Doe', '1990-01-15', 'john.doe@example.com'),
+    ('Jane', 'Smith', '1992-05-20', 'jane.smith@example.com'),
+    ('Bob', 'Johnson', '1988-08-10', 'bob.johnson@example.com');
+
+-- Insert sample data into courses table
+INSERT INTO courses (course_name, instructor)
+VALUES 
+    ('Introduction to Computer Science', 'Dr. Smith'),
+    ('Mathematics for Beginners', 'Prof. Brown'),
+    ('History of Art', 'Dr. Johnson');
+
+-- Enroll students in courses
+INSERT INTO student_courses (student_id, course_id)
+VALUES 
+    (1, 1),
+    (1, 2),
+    (2, 2),
+    (3, 3);
+    -- Fetch Data
+    SELECT * FROM students
 
